@@ -1,8 +1,7 @@
-#include <WiFi.h>
-
 // Tipe data di arduino
 
-// int ledPin; // bilangan bulat 2 byte -32.768 sampai 32.768
+// int ledPin = 20; // bilangan bulat 2 byte -32.768 sampai 32.768
+// int led; // null bisa kosong dan diisi nanti namun tipenya integer
 // String text = "Hello World!"; // char bisa digunakan untuk string
 // bool nilai = true; // itu adalah binnary atau binner
 // long nilai1 = -2146483648; // long bilangan bulat 4 byte -2.146.483.648 sampai -2.146.483.647 
@@ -10,24 +9,12 @@
 // double nilai3 = 1123.123; // double bilangan real yang buanyaaakkk
 // unsigned int nilai4 = 65.535; // bilangan bulat 2 byte 0 sampai 65.535
 
-const char* SSID = "DIDIET CH";
-const char* PASSWORD = "didietch";
+/* komen sjadnkjsnajk
+nskjakndjsakl
+snakjndand */
 
 void setup() {
-  Serial.begin(115200);
-
-  Serial.println("Connecting to Wifi");
-
-  WiFi.begin(SSID, PASSWORD);
-
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
-
-  Serial.println("\nConnected!");
-  Serial.print("IP Address: ");
-  Serial.println(WiFi.localIP());
+  
 }
 
 void loop() {
